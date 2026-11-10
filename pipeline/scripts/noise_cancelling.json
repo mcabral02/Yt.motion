@@ -1,0 +1,13 @@
+{
+  "title": "How do noise-cancelling headphones erase sound?",
+  "voice": "am_liam",
+  "speed": 1.1,
+  "scenes": [
+    {"id": "hook",   "visual": "hook",   "text": "How do noise-cancelling headphones erase sound?"},
+    {"id": "waves",  "visual": "waves",  "text": "Sound is just air pressure moving in waves, with highs and lows."},
+    {"id": "mic",    "visual": "mic",    "text": "Tiny microphones on the outside of each earcup listen to the noise around you."},
+    {"id": "flip",   "visual": "flip",   "text": "A chip flips that wave upside down, and the speaker plays the exact opposite."},
+    {"id": "cancel", "visual": "cancel", "text": "When a high meets a low, they cancel out, so the noise fades before it reaches your ear."},
+    {"id": "outro",  "visual": "outro",  "text": "It works best on steady sounds, like a plane engine. Follow for more."}
+  ]
+}

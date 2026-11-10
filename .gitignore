@@ -1,0 +1,4 @@
+pipeline/models/
+pipeline/out/
+__pycache__/
+*.tmp.mp4

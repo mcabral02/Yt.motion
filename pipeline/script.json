@@ -1,0 +1,37 @@
+{
+  "title": "What if the Moon vanished tonight?",
+  "voice": "am_liam",
+  "speed": 1.1,
+  "scenes": [
+    {
+      "id": "hook",
+      "visual": "moon_vanish",
+      "text": "What if the Moon vanished tonight?"
+    },
+    {
+      "id": "dark",
+      "visual": "dark_sky",
+      "text": "First, the nights would get much darker. No full moon, ever again."
+    },
+    {
+      "id": "tides",
+      "visual": "tides",
+      "text": "The tides would shrink to less than half their size, because only the Sun would be tugging on the oceans."
+    },
+    {
+      "id": "coral",
+      "visual": "coral",
+      "text": "Corals that time their spawning to the Moon would lose their calendar."
+    },
+    {
+      "id": "tilt",
+      "visual": "tilt",
+      "text": "And over millions of years, Earth's tilt could swing wildly, scrambling the seasons."
+    },
+    {
+      "id": "outro",
+      "visual": "outro",
+      "text": "That rock in the sky is quietly keeping our planet steady. Follow for more what ifs."
+    }
+  ]
+}

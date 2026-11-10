@@ -5,7 +5,11 @@ The owner is learning to code through this project: explain what you do in plain
 
 ## Channel decisions
 - Name / handle: **xplain.motion** (display name "Xplain Motion")
-- Topics: how things work, what-ifs, interactive "you choose" stories; tech/AI later
+- Niche: one umbrella, "how things work", aimed at teens/adults (not kids)
+  - ~70% How it works: everyday tech, the human body, machines, science. Lean toward tech topics (better pay, bridges to AI later)
+  - ~30% What if: science-based what-ifs, still explained (fact-checked)
+  - Not now: interactive stories (entertainment, kid-skewing, lowest pay). AI explainers come later as part of "how it works"
+  - Vary the format inside the style (different openings, camera moves, pacing) so uploads are not one repeated template
 - Format: ~30 s vertical (1080x1920), question in the first second, end right after the answer
 - Style target: 3D animation in the Zack D. Films style (soft lighting, rounded clay-like characters, close-ups). One consistent style, voice and caption look across the channel.
 - Narrator: Kokoro voice `am_liam`, speed 1.1. Never clone a real person's voice.

@@ -1,0 +1,27 @@
+{
+  "title": "Your headphones make sound to ERASE sound",
+  "voice": "am_puck",
+  "speed": 1.2,
+  "pitch": 0,
+  "keywords_note": "*word* = red (noise), ~word~ = cyan (anti-noise / fix), ^word^ = amber (key idea). Per-scene speed/pitch = tone of voice.",
+  "scenes": [
+    {"id": "hook",   "visual": "hook",   "speed": 1.25, "pitch": 1.5, "label": "",
+     "text": "Your headphones are secretly making *sound* to ^erase^ sound!"},
+    {"id": "plane",  "visual": "plane",  "speed": 1.22, "pitch": 1.0, "label": "",
+     "text": "Picture a plane. That *engine* *roar* is slamming into your ears, nonstop."},
+    {"id": "air",    "visual": "air",    "speed": 1.12, "pitch": 0.0, "label": "SQUEEZE · STRETCH",
+     "text": "Every sound is a ^wave^ of air, squeezing and stretching hundreds of times every second."},
+    {"id": "mic",    "visual": "mic",    "speed": 1.18, "pitch": 0.5, "label": "OUTSIDE MIC",
+     "text": "So, tiny ^microphones^ on the outside of each earcup record the *noise* before it reaches you."},
+    {"id": "chip",   "visual": "chip",   "speed": 1.2,  "pitch": 0.8, "label": "ANTI-NOISE",
+     "text": "A chip copies that wave, ^flips^ it upside down, and the speaker plays this ~anti-noise~ in a split second!"},
+    {"id": "cancel", "visual": "cancel", "speed": 1.15, "pitch": 1.5, "label": "", "sfx": [[2.4, "ding"]],
+     "text": "Where the noise *pushes*, the anti-noise ~pulls~. Peak meets valley, and they ^cancel^ out!"},
+    {"id": "inside", "visual": "inside", "speed": 1.18, "pitch": 0.0, "label": "INSIDE MIC", "sfx": [[2.6, "ding"]],
+     "text": "A second mic inside the cup listens to whatever is left, and ~fixes~ the mistakes."},
+    {"id": "limits", "visual": "limits", "speed": 1.12, "pitch": -0.8, "label": "TOO FAST!", "sfx": [[0.9, "impact"], [2.6, "impact"]],
+     "text": "But it's not perfect. Sudden sounds, like a *dog* *bark*, change too fast to predict."},
+    {"id": "outro",  "visual": "outro",  "speed": 1.22, "pitch": 1.2, "label": "",
+     "text": "That's why engines ^vanish^, but voices still sneak through. Follow for more!"}
+  ]
+}

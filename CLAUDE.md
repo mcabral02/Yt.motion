@@ -10,10 +10,15 @@ The owner is learning to code through this project: explain what you do in plain
   - ~30% What if: science-based what-ifs, still explained (fact-checked)
   - Not now: interactive stories (entertainment, kid-skewing, lowest pay). AI explainers come later as part of "how it works"
   - Vary the format inside the style (different openings, camera moves, pacing) so uploads are not one repeated template
-- Format: ~30 s vertical (1080x1920), question in the first second, end right after the answer
+- Format: ~40 s vertical (1080x1920), hook in the first second, 8-10 scenes with real detail, end right after the payoff
 - Style target: 3D animation in the Zack D. Films style (soft lighting, rounded clay-like characters, close-ups). One consistent style, voice and caption look across the channel.
-- Narrator: Kokoro voice `am_liam`, speed 1.1. Never clone a real person's voice.
-- Captions: big bold uppercase, 1-3 words at a time, active word highlighted in amber (#FFB547) with black outline
+- Narrator: Kokoro voice `am_puck`, base speed 1.2, with a per-scene "tone" (`speed` + `pitch` in semitones per scene:
+  hook/payoff faster and higher, explanations calmer, "but..." moments lower). Never clone a real person's voice or a known character's voice.
+- Captions: big bold uppercase, 1-2 words at a time, pop-in with bounce + slight tilt, active word amber (#FFB547), black outline.
+  Keyword marks in script text: `*word*` red (the problem), `~word~` cyan (the fix), `^word^` amber (key idea) -> bigger, own group, pop sound.
+  Optional per-scene `label` (amber pill at the top) and `sfx` list ([[seconds, "ding"|"impact"|"pop"|"whoosh"]]).
+- Sound: `sound.py` synthesizes original music (ducked under the voice) and SFX; no copyrighted music.
+- Editing energy (compose.py): punch-in zoom + white flash + whoosh on every cut, slow push-in during shots.
 
 ## Pipeline (run from `pipeline/`)
 1. `bash ../setup.sh` once per fresh workspace (installs tools, downloads the voice model)

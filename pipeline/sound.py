@@ -20,7 +20,9 @@ def note_hz(n): return 440 * 2 ** ((n - 69) / 12)
 def music(seconds, bpm=112):
     beat = 60 / bpm; n = int(seconds * SR); out = np.zeros(n + SR)
     def put(sig, t):
-        i = int(t * SR); j = min(len(out), i + len(sig)); out[i:j] += sig[:j - i]
+        i = int(t * SR)
+        if i < 0 or i >= len(out): return      # sound would start outside the track: skip it
+        j = min(len(out), i + len(sig)); out[i:j] += sig[:j - i]
     kick_t = np.arange(int(0.25 * SR)) / SR
     kick = np.sin(2 * np.pi * (50 + 90 * np.exp(-kick_t * 30)) * kick_t) * np.exp(-kick_t * 12)
     clap = lowpass(rng.standard_normal(int(0.15 * SR)), 3000) * env(int(0.15 * SR), 0.001, 0.05) * 0.6

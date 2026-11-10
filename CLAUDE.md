@@ -19,10 +19,12 @@ The owner is learning to code through this project: explain what you do in plain
 1. `bash ../setup.sh` once per fresh workspace (installs tools, downloads the voice model)
 2. Writer: create `script.json` (title, voice, speed, scenes with id / visual / text)
 3. Voice: `python3 voice.py [script.json]` -> out/narration.wav + out/timings.json
-4. Preview stills: `python3 render.py preview [script.json]` -> look at them before a full render
-5. Render: `python3 render.py all [script.json]` -> out/short.mp4
+4. 3D previews: `python3 render3d.py scripts/X.json preview hook:2.0 cancel:1.2` -> out/3d/preview_*.png; look before rendering
+5. 3D render (run in background, ~1 h): `python3 render3d.py scripts/X.json all` -> out/3d/<scene>/f0000.png ... (resumes if stopped)
+6. Compose: `python3 compose.py scripts/X.json` -> out/X.mp4 (captions, logo, voice)
 
-`render.py` is the current 2D (cairo) renderer. `test3d.py` is the Blender 3D test.
+Scripts live in `pipeline/scripts/`. `render3d.py` holds the 3D set (character, headphones, waves) and one function per scene visual;
+new topics add new scene functions/props. `captions.py` is the shared caption + logo style. `render.py` is the old 2D renderer.
 3D speed in the cloud workspace (2 CPU cores): Cycles ~12 s/frame at 540x960 with 10 samples + denoise
 -> render 3D at half size, 15 fps, upscale to 1080x1920. A 30 s Short is ~1.5 h, so 3D renders run as overnight scheduled tasks.
 
